@@ -2,6 +2,9 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { SiGeeksforgeeks } from "react-icons/si";
+import { SiLeetcode } from "react-icons/si";
+import { FaInstagram } from "react-icons/fa6";
 
 const SocialLinks = () => {
   const links = [
@@ -12,8 +15,17 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/es-amit/",
       style: "rounded-tr-md",
+    },
+    {
+      id: 1,
+      child: (
+        <>
+          Instagram <FaInstagram size={30} />
+        </>
+      ),
+      href: "https://www.instagram.com/es_a.m.i.t/",
     },
     {
       id: 2,
@@ -31,10 +43,30 @@ const SocialLinks = () => {
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:foo@gmail.com",
+      href: "mailto:amit.singh.9312687983@gmail.com",
     },
     {
       id: 4,
+      child: (
+        <>
+          GFG <SiGeeksforgeeks size={30} />
+        </>
+      ),
+      href: "https://www.geeksforgeeks.org/user/esamit/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user",
+      download: true,
+    },
+    {
+      id: 5,
+      child: (
+        <>
+          LeetCode <SiLeetcode size={30} />
+        </>
+      ),
+      href: "https://leetcode.com/u/es_amit/",
+      download: true,
+    },
+    {
+      id: 6,
       child: (
         <>
           Resume <BsFillPersonLinesFill size={30} />
@@ -46,7 +78,7 @@ const SocialLinks = () => {
     },
   ];
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
+    <div className="hidden lg:flex flex-col top-[20%] left-0 fixed">
       <ul>
         {links.map(({ id, child, href, style, download }) => (
           <li
