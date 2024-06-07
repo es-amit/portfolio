@@ -1,3 +1,7 @@
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import React from "react";
+
 const config = {
   particles: {
     number: {
@@ -109,4 +113,16 @@ const config = {
   retina_detect: true,
 };
 
-export default config;
+const Particlesbg = () => {
+  const particlesInit = async (main) => {
+    await loadFull(main);
+  };
+
+  return (
+    <div>
+      <Particles className={Particles} init={particlesInit} options={config} />
+    </div>
+  );
+};
+
+export default Particlesbg;

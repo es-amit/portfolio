@@ -3,21 +3,24 @@ import Home from "./components/Home";
 import SocialLinks from "./components/SocialLinks";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import ParticlesBackground from "./components/ParticlesBackground";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-
+import ParticlesBg from "./components/ParticlesBg";
 function App() {
   return (
     <div>
-      <NavBar />
-      <ParticlesBackground />
-      <Home />
-      <About />
-      <SocialLinks />
-      <Projects />
-      <Skills />
-      <Contact />
+      <div>
+        <NavBar />
+        <Home />
+        <About />
+        <SocialLinks />
+        <Projects />
+        <Skills />
+        <Contact />
+      </div>
+      <div>
+        <ParticlesBg />
+      </div>
     </div>
   );
 }

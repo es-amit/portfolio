@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import HeroImage from "../assets/profile-pic-9.png";
+import HeroImage from "../assets/profile-pic.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 const Home = () => {
@@ -15,9 +15,7 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
-          {/* <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm a Flutter Developer
-          </h2> */}
+          =
           <h2 className="text-3xl sm:text-4xl font-bold text-white">
             I'm a{" "}
             <span className="text-2xl font-bold text-cyan-500">{text}</span>
@@ -30,7 +28,6 @@ const Home = () => {
             application. Currently, I love to work on mobile application using
             technologies like Flutter, Firebase, Node JS and Express.
           </p>
-
           <div>
             <Link
               to="projects"

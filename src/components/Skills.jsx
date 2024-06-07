@@ -3,7 +3,7 @@ import github from "../assets/github.png";
 import javascript from "../assets/javascript.png";
 import node from "../assets/node.png";
 import cpp from "../assets/cpp.png";
-import docker from "../assets/docker.png";
+import supabase from "../assets/supabase.png";
 import firebase from "../assets/firebase.png";
 import flutter from "../assets/flutter.png";
 import mongo from "../assets/mongo.png";
@@ -56,9 +56,9 @@ const Skills = () => {
     },
     {
       id: 8,
-      src: docker,
-      title: "Docker",
-      style: "shadow-blue-400",
+      src: supabase,
+      title: "Supabase",
+      style: "shadow-green-400",
     },
     {
       id: 9,

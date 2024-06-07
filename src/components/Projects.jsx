@@ -1,26 +1,23 @@
 import React from "react";
-
+import chat_jet from "../assets/projects/chat_jet.png";
+import instant_gram from "../assets/projects/instant-gram.png";
+import typeracer from "../assets/projects/typeracer.png";
 const Projects = () => {
   const projects = [
     {
+      id: 1,
+      src: instant_gram,
+      code: "https://github.com/es-amit/Instagram-Clone",
+    },
+    {
       id: 2,
-      src: "https://tinyurl.com/mr38nxxr",
+      src: chat_jet,
+      code: "https://github.com/es-amit/Chat-Jet",
     },
     {
       id: 3,
-      src: "https://tinyurl.com/mr38nxxr",
-    },
-    {
-      id: 4,
-      src: "https://tinyurl.com/mr38nxxr",
-    },
-    {
-      id: 5,
-      src: "https://tinyurl.com/mr38nxxr",
-    },
-    {
-      id: 6,
-      src: "https://tinyurl.com/mr38nxxr",
+      src: typeracer,
+      code: "https://github.com/es-amit/Typeracer",
     },
   ];
   return (
@@ -36,7 +33,7 @@ const Projects = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {projects.map(({ id, src }) => (
+          {projects.map(({ id, src, code }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -44,10 +41,21 @@ const Projects = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110"
+                  onClick={() => {
+                    console.log("Demo button clicked");
+                    // Add your logic here
+                  }}
+                >
                   Demo
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110"
+                  onClick={() => {
+                    window.open(code, "_blank");
+                  }}
+                >
                   Code
                 </button>
               </div>
