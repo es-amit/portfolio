@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full sm:h-screen bg-gradient-to-b from-gray-800 to-black text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -12,7 +12,7 @@ const About = () => {
             About
           </p>
         </div>
-        <p className="text-xl mt-20">
+        <p className="text-lg md:text-xl mt-20">
           "Hello! I'm Amit Singh, a passionate Flutter developer currently
           pursuing BCA (Bachelor of Computer Applications) and specializing in
           Android development. With a strong foundation in Dart, Flutter, and
@@ -26,7 +26,7 @@ const About = () => {
           continuously expanding my knowledge.
         </p>
         <br />
-        <p className="text-xl">
+        <p className="text-lg md:text-xl ">
           Through this website, I hope to share my knowledge and insights with
           others in the programming community and inspire others to pursue their
           passions in technologies. I am always open to new opportunities and
